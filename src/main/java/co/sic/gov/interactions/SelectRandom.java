@@ -1,0 +1,30 @@
+package co.sic.gov.interactions;
+
+import net.serenitybdd.core.pages.WebElementFacade;
+import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.Interaction;
+import net.serenitybdd.screenplay.Performable;
+
+import java.util.List;
+import java.util.Random;
+
+import static co.sic.gov.UI.IngresarPagUI.LIST_MENSAJES;
+import static net.serenitybdd.screenplay.Tasks.instrumented;
+
+public class SelectRandom implements Interaction {
+    @Override
+    public <T extends Actor> void performAs(T actor) {
+
+        List<WebElementFacade> listProducts=LIST_MENSAJES.resolveAllFor(actor);// resuelva todo para el actor, generar una lista de elementos
+        Random random= new Random();
+
+        int indexRandom= random.nextInt(listProducts.size());
+        listProducts.get(indexRandom).click();
+
+
+    }
+
+    public static Performable click(){
+        return instrumented(SelectRandom.class);
+    }
+}
