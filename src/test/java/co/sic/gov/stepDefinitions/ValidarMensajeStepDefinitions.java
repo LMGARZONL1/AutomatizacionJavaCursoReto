@@ -6,8 +6,10 @@ import co.sic.gov.tasks.IngresarPagTask;
 import co.sic.gov.tasks.SeleccionarMensajeTask;
 import io.cucumber.java.es.*;
 import io.cucumber.java.Before;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 import org.hamcrest.Matchers;
+import org.openqa.selenium.WebDriver;
 
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.*;
@@ -16,7 +18,7 @@ public class ValidarMensajeStepDefinitions {
 
     @Before
     public void setupActor() {
-
+        WebDriverManager.chromedriver().setup();
         setTheStage(new OnlineCast());
     }
 

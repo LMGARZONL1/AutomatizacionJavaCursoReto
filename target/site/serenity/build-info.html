@@ -123,7 +123,7 @@
             <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 01-12-2023 11:49:11</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 01-12-2023 14:44:09</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -139,6 +139,10 @@
                         <td>firefox</td>
                     </tr>
                     <tr>
+                        <td style="width: 30%">Driver chrome</td>
+                        <td>{goog:chromeOptions={args=[start-maximized, test-type, no-sandbox, lang=es, disable-popup-blocking, disable-download-notification, ignore-certificate-errors, allow-running-insecure-content, disable-translate, always-authorize-plugins, disable-extensions, remote-allow-origins=*, start-maximized, test-type, no-sandbox, lang=es, disable-popup-blocking, disable-download-notification, ignore-certificate-errors, allow-running-insecure-content, disable-translate, always-authorize-plugins, disable-extensions, remote-allow-origins=*], extensions=[]}, acceptInsecureCerts=false, browserName=chrome}</td>
+                    </tr>
+                    <tr>
                         <td style="width: 30%">Driver edge</td>
                         <td>{acceptInsecureCerts=false, browserName=MicrosoftEdge, ms:edgeOptions={args=[start-maximized, lang=es, ignore-certificate-errors, disable-download-notification, always-authorize-plugins, disable-translate, remote-allow-origins=*, start-maximized, lang=es, ignore-certificate-errors, disable-download-notification, always-authorize-plugins, disable-translate, remote-allow-origins=*], extensions=[]}, prefs={profile.default_content_settings.local_storage=1, profile.default_content_settings.cookies=1}}</td>
                     </tr>
@@ -148,6 +152,18 @@
                     </tr>
                 </table>
 
+                    <h2>Driver capabilities: chrome</h2>
+                    <table class="table table-striped build-info">
+                            <tr>
+                                <td style="width: 30%">goog:chromeOptions</td><td>{args=[start-maximized, test-type, no-sandbox, lang=es, disable-popup-blocking, disable-download-notification, ignore-certificate-errors, allow-running-insecure-content, disable-translate, always-authorize-plugins, disable-extensions, remote-allow-origins=*, start-maximized, test-type, no-sandbox, lang=es, disable-popup-blocking, disable-download-notification, ignore-certificate-errors, allow-running-insecure-content, disable-translate, always-authorize-plugins, disable-extensions, remote-allow-origins=*], extensions=[]}</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 30%">acceptInsecureCerts</td><td>false</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 30%">browserName</td><td>chrome</td>
+                            </tr>
+                    </table>
                     <h2>Driver capabilities: edge</h2>
                     <table class="table table-striped build-info">
                             <tr>
